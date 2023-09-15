@@ -11,7 +11,7 @@ function makeCells() {
             const gridColumn = document.createElement("div");
             gridColumn.classList.add('column');
             gridRow.appendChild(gridColumn);
-            gridColumn.textContent = ". ";
+            gridColumn.textContent = " ";
             }
     }
 }
