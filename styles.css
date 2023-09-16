@@ -1,5 +1,17 @@
 
+.clear {
+    border-style: solid;
+    border-color: black;
 
+height: 30px;
+width: 50px;
+
+
+}
+
+.clear:hover {
+    background-color: azure;
+}
 #divContainer {
     border-style: solid;
     border-color: pink;
@@ -26,6 +38,8 @@ flex:none;
 
 }
 
-.column:hover {
-    background-color: red;
+.cola {
+    background-color: blue;
 }
+
+
