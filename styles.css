@@ -72,7 +72,6 @@ h1 {
     height: 100%;
     flex: 1; 
     display: grid;
-    /*background-color: white; */
 }
 
 .column {
@@ -80,8 +79,4 @@ h1 {
     width: auto;
     height: auto; 
 
-}
-
-.cola {
-    background-color: var(--bg-color);
 }
