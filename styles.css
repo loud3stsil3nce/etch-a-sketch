@@ -1,18 +1,61 @@
+body {
+   text-align: center;
+   background-color:thistle;
+}
 
+h1 {
+    background-color: blanchedalmond;
+}
+
+.welcome {
+    background-color: goldenrod;
+    font-weight:bolder;
+}
+#gameContainer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: auto;
+    border-style: solid;
+    border-color: maroon;
+    background-color: aqua;
+    
+}
+
+.welcome {
+    border-style: solid;
+    border-color: maroon;
+    padding: 10px;
+    text-align: center;
+}
+.start {
+ 
+    width: 90px;
+
+}
+.clear {
+ 
+}
+
+.start ,
 .clear {
     border-style: solid;
     border-color: black;
-    height: 30px;
-    width: 50px;
+    border-radius: 5px;
+    height: 50px;
+    margin: 10px;
 }
 
-.clear:hover {
+
+.clear:hover ,
+.start:hover {
     background-color: azure;
 }
 
 #divContainer {
     border-style: solid;
-    border-color: pink;
+    border-color:greenyellow;
     display:flex;
     justify-content: center;
     margin-left: auto;
@@ -21,6 +64,8 @@
     margin-bottom: auto;
     height: 500px; 
     width: 500px;
+    border-radius: 2px;
+    background-color: white;
 }
 
 .row {
@@ -28,6 +73,7 @@
     height: 100%;
     flex: 1; 
     display: grid;
+    background-color: white;
 }
 
 .column {
@@ -40,6 +86,3 @@
 .cola {
     background-color: blue;
 }
-
-
-
