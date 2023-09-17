@@ -11,14 +11,26 @@ function makeCells(userInput) {
             const gridColumn = document.createElement("div");
             gridColumn.classList.add('column');
             gridRow.appendChild(gridColumn); // creates columns for each row
-                gridColumn.addEventListener('mouseover', 
-                e => e.target.classList.add('cola')) //adds color to box on mouseOver event.
-                const clear = document.querySelector('.clear');
+            
+                const randColor = () => {
+                    const hexVal = Math.floor(Math.random() * 0xffffff).toString(16);
+                    gridColumn.style.background = `#${hexVal}`;
+                } // generates random hex color val
+                gridColumn.addEventListener('mouseover', randColor); 
+                // on hover, change bg to random color
+
+
+                 const clear = document.querySelector('.clear');
                 
                 clear.addEventListener('click', clearPage) ;      
                 function clearPage() {
-                gridColumn.classList.remove('cola')
+                //gridColumn.classList.remove('cola');
+                gridColumn.style.background = `white`;
                 }   //code for clear button; whenever clicked, clears canvass.
+ 
+
+                                                                                                                                                                                                                                                                        
+
         }   
     }
 }
@@ -38,10 +50,6 @@ start.addEventListener('click', function() {
     
 })
 //also make sure size of container does not change with addes squares
-
-
-
-
 
 
 
