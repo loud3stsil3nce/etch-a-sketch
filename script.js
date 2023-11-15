@@ -16,21 +16,16 @@ function makeCells(userInput) {
                     const hexVal = Math.floor(Math.random() * 0xffffff).toString(16);
                     gridColumn.style.background = `#${hexVal}`;
                 } // generates random hex color val
+                
                 gridColumn.addEventListener('mouseover', randColor); 
                 // on hover, change bg to random color
 
-
-                 const clear = document.querySelector('.clear');
-                
-                clear.addEventListener('click', clearPage) ;      
+                const clear = document.querySelector('.clear');
+                clear.addEventListener('click', clearPage);      
                 function clearPage() {
-                //gridColumn.classList.remove('cola');
-                gridColumn.style.background = `white`;
+                    gridRow.innerHTML = '';
+                    gridColumn.style.background = `white`;
                 }   //code for clear button; whenever clicked, clears canvass.
- 
-
-                                                                                                                                                                                                                                                                        
-
         }   
     }
 }
@@ -38,6 +33,7 @@ function makeCells(userInput) {
 
 const start = document.querySelector('.start');
 start.addEventListener('click', function() {
+    
     gridContainer.innerHTML = ""
     const userInput = prompt('How many squares per side do you want?')
     if (userInput > 100) {
@@ -49,7 +45,7 @@ start.addEventListener('click', function() {
     }
     
 })
-//also make sure size of container does not change with addes squares
+
 
 
 
